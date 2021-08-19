@@ -1,0 +1,16 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "2.2.0",
+    "jquery-validation": "1.14.0",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "paper": "0.11.3",
+    "fabric": "1.7.11",
+    "bootstrap-treeview": "1.2.0",
+    "jstree": "3.3.4",
+    "fancytree": "2.23.0",
+    "requirejs": "2.3.3"
+  }
+}

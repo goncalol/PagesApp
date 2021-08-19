@@ -1,0 +1,24 @@
+@model RootData[]
+
+@{
+    ViewData["Title"] = "Public";
+}
+<link href="~/css/simple-sidebar.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/css/bootstrap-slider.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+
+@if (ViewBag.error == null)
+{
+<canvas id="myCanvas"></canvas>
+<div id="hiddenDiv" hidden>
+    @Html.Raw(Json.Serialize(Model))
+</div>
+
+<script type="text/javascript" src="~/js/bundle2.js"></script>
+}
+else
+{
+    <h1 style="margin-top:50px; padding:10px">@ViewBag.error</h1>
+}
+

@@ -1,0 +1,1 @@
+[{"Rectangle":{"left":100,"top":100,"fill":null,"strokeWidth":1,"stroke":1,"width":50,"height":25}},{"Circle":{"radius":20,"left":137,"top":311,"fill":"#923232","strokeWidth":1,"stroke":1}},{"Circle":{"radius":20,"left":420,"top":127,"fill":"#28535f","strokeWidth":1,"stroke":1}}]

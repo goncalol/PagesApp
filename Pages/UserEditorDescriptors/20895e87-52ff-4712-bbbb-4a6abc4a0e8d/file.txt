@@ -1,0 +1,1 @@
+[{"Group":{"left":78,"top":235,"scaleX":1.0,"scaleY":1.0,"Child":[{"Image":{"left":-69,"top":-20,"width":250,"height":150,"scaleX":0.229357556,"scaleY":0.262216568,"link":"images/20895e87-52ff-4712-bbbb-4a6abc4a0e8d/calendar.jpg"}},{"Text":{"left":-7,"top":-14,"width":32,"height":11,"scaleX":2.2838037,"scaleY":2.2838037,"text":"Eventos"}}]}}]

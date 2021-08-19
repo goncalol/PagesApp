@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/simple-sidebar.css" rel="stylesheet" />
+<link href="~/lib/fancytree/dist/skin-win8/ui.fancytree.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/css/bootstrap-slider.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+
+
+<div class="row" style="margin-top:50px; height:100%">
+    <div class="col-md-1" style="padding-right:0; height:100%">
+        <ul class="sidebar-nav" style="background-color:#222222; height:100%">
+            <li class="sidebar-brand"><a href="#">Tools</a></li>
+            <li><a href="#" id="rectangleBtn" >Rectangle</a> </li>
+            <li><a href="#" id="circleBtn">Circle</a> </li>
+            <li><a href="#" id="lineBtn">Line</a> </li>
+            <li><a href="#" id="textBtn">Text</a> </li>
+            <li><a href="#" id="imageBtn">Image</a> </li>
+            <li class="sidebar-brand" style="margin-top:50px"><a href="#">Other Tools </a></li>
+            <li><a href="#" id="saveBtn">Save</a> </li>
+            <li><a href="#" onclick="crop()">Circle Crop</a> </li>
+            <li><a href="#" id="groupObj" >Group</a> </li>
+            <li style="text-indent:0px"><div id="treeee"></div> </li>
+        </ul>
+    </div>
+    <div class="col-md-10" style="padding:0">
+        <canvas id="myCanvas"></canvas>
+        <img class="hidden" id="imgtest" src="~/images/transferir.jpg" width="320" height="491"> 
+        <p hidden id="submitId">@Url.Action("submit")</p>
+    </div>
+    <div class="col-md-1" style="padding-left:0; height:100%" id="rightSideBar">
+        <ul id="optionsSidebar" class="sidebar-nav" style="background-color:#222222; height:100%">
+            <li class="sidebar-brand"><a href="#">Options </a></li>
+            <li><a href="#" >Background</a> </li>
+        </ul>
+        
+    </div>
+</div>
+
+
+@if (ViewBag.HasContent) {
+<div id="hiddenDiv" hidden>
+    @Html.Raw(Json.Serialize(Model))
+</div>
+}
+
+<script type="text/javascript" src="~/js/bundle.js"></script>
+
+
+<style>
+    #tree ul{
+        background-color: #222222;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:14px;
+        border:0
+    }
+
+    #tree li {
+        background-color: #222222;
+        padding: 0;
+        text-indent: unset !important
+    }
+
+    #tree li span {
+        color: #999999;
+    }
+
+    .fancytree-plain span.fancytree-title {
+        border-color:none
+    }
+
+</style>
+
+
+
+
